@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html ng-app ="myApp">
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <title>Analysis graph to the people of different age groups</title>
+</head>
+<body>
+<!--surrounding entire layout including the header-->
+    <div class="container">
+        <h1>Analysis graph to the people of different age groups</h1>
+
+        <table class = "table" ng-controller ="AppCtrl">
+                <!--<tr ng-repeat ="result in results">-->
+                  <td>trace 0 for Gene sub1 age < 40 </td>
+                  <td>trace 1 for Gene sub1 age >= 40 </td>
+                  <td>trace 2 for Gene oxr1 age < 40 </td>
+                  <td>trace 3 for Gene oxr1 age >= 40 </td>
+                  <td>trace 4 for Gene sod1 age < 40 </td>
+                  <td>trace 5 for Gene sod1 age >= 40 </td>
+
+        </table>
+    </div>
+    
+    <div id="myDiv" style="width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="controllers/controller.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<html ng-app>
+<head>
+
+    <title>Contact List App</title>
+</head>
+<body>
+<h1>Contact List App</h1>
+
+<!--what u type in the input frame will be displayed other side-->
+<input ng-model ="test">
+{{test}}
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</body>
+</html>
